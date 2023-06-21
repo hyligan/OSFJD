@@ -1,3 +1,4 @@
+BEGIN;
 create table public.consumers
 (
     consumer_id       bigint primary key,
@@ -158,3 +159,4 @@ alter table public.auth
     add constraint auth_consumers_consumer_id_fk
         foreign key (consumer_id) references public.consumers;
 
+commit ;
