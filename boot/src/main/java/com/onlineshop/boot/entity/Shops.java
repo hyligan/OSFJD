@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "shops",catalog = "shop", schema = "public")
+@Table(name = "shop",catalog = "shop", schema = "public")
 public class Shops {
   @Id
   private Long id;
